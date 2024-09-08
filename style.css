@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+button {
+    box-sizing: border-box;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #7c3aed;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#pagina {
+    height: 100vh;
+}
+
+.Displayflex {
+    display: flex;
+}
+
+#pagina > * {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header img {
+    width: 160px;
+    height: 54px;
+}
+
+#pagina > div {
+    padding: 40px 112px;
+}
+
+main {
+    margin-top: 114px;
+    max-width: 384px;
+}
+
+.Titulo {
+    max-width: 350px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 55px;
+    color: #1E293B;
+}
+
+p {
+    color: #475569;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+.input {
+    position: relative;
+}
+
+.input, .input {
+    margin-top: 16px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1e293b;
+}
+
+.labelSenha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.labelSenha label a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 16px 12px;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1e293b;
+}
+
+input:focus,
+input:hover {
+    border: 1px solid #7c3aed;
+    outline: 0;
+}
+
+.olho {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 55%;
+    right: 5%;
+}
+
+.escondido {
+    display: none;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    background: #7c3aed;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: bold;
+    color: #ffffff;
+    margin-block: 32px;
+}
+
+form button:focus {
+    outline: 2px solid black;
+    border-radius: 2px;
+}
+
+form button:hover {
+    background: #9f67ff;
+}
+
+.criarConta {
+    color: #475569;
+}
+
+@media (max-width: 900px) {
+    #pagina > * {
+        width: 100%;
+    }
+    #pagina > img {
+        display: none;
+    }
+
+    #pagina > div {
+        padding: 110px;
+    }
+
+    main {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #pagina > div {
+        padding: 40px;
+    }
+}
